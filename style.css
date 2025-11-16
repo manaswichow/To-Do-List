@@ -1,0 +1,152 @@
+:root {
+    --bg-color: #f6f6f6;
+    --text-color: #333;
+    --container-bg: #fff;
+    --task-bg: #f9f9f9;
+}
+
+body.dark {
+    --bg-color: #1e1e1e;
+    --text-color: #f1f1f1;
+    --container-bg: #2c2c2c;
+    --task-bg: #3a3a3a;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.container {
+    background: var(--container-bg);
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-section {
+    display: flex;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: var(--task-bg);
+    color: var(--text-color);
+}
+
+#add-btn,
+#clear-all {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#clear-all {
+    background: #e53935;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: var(--task-bg);
+    color: var(--text-color);
+}
+
+#theme-toggle {
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+body.dark #theme-toggle {
+    background: #ddd;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: var(--task-bg);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.btns {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: #0288d1;
+}
+
+.delete-btn {
+    background: #ff5c5c;
+}
+
+#task-counter {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
