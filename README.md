@@ -46,7 +46,7 @@ script.js
 2. Open the folder
 3. Double-click index.html
 # Contributing 
-Issues and suggestions are welcome.
+Issues, suggestions and improvements are welcome.
 # Support 
 If you like this project ,please star ⭐ the respository
 # Author
